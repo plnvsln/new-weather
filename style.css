@@ -1,6 +1,25 @@
-.content {
-  margin: 50px;
+body {
+  background-image: url("background.jpeg");
+  background-size: 100%;
+  color: rgb(235, 251, 171);
+  margin: 150px;
 }
+
 .current-temp {
   font-size: 95px;
+}
+
+.forecast-temp {
+  font-size: 34px;
+}
+
+button {
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  background-color: rgb(224, 252, 111);
+}
+
+button:hover {
+  background-color: rgb(105, 247, 150);
 }
