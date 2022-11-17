@@ -30,7 +30,9 @@ body {
   border-radius: 15px;
   background-color: rgb(229, 248, 157);
 }
-
+.current-description {
+  font-size: 28px;
+}
 .forecast-description {
   color: antiquewhite;
   font-size: 15px;
