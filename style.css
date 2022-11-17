@@ -4,9 +4,12 @@ body {
   color: rgb(235, 251, 171);
   margin: 150px;
 }
+h1 {
+  font-size: 60px;
+}
 
 .current-temp {
-  font-size: 95px;
+  font-size: 55px;
 }
 
 .forecast-temp {
