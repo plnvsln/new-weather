@@ -1,5 +1,5 @@
 body {
-  background-image: url("background.jpeg");
+  background-image: url("images/background.jpeg");
   background-size: 100%;
   color: rgb(235, 251, 171);
   margin: 150px;
@@ -13,13 +13,25 @@ body {
   font-size: 34px;
 }
 
-button {
+.button-location {
   padding: 15px 20px;
   font-size: 18px;
   border-radius: 15px;
   background-color: rgb(224, 252, 111);
 }
 
-button:hover {
-  background-color: rgb(105, 247, 150);
+.button-location:hover {
+  background-color: rgb(247, 219, 105);
+}
+.button-search {
+  padding: 13px 20px;
+  margin-top: -3px;
+  font-size: 15px;
+  border-radius: 15px;
+  background-color: rgb(229, 248, 157);
+}
+
+.forecast-description {
+  color: antiquewhite;
+  font-size: 15px;
 }

@@ -22,18 +22,31 @@
   <body>
     <div class="content" style="background-color: rgba(0, 0, 0, 0.5)">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-10">
           <h1>Chicago</h1>
           <h5>Wednesday, 8 September, 12:35</h5>
         </div>
-        <div class="col-md-6">
-          <button>My Location</button>
+        <div class="col-md-2">
+          <button class="button-location">My Location</button>
         </div>
       </div>
 
-      <br />
-      <br />
-      <div class="container">
+      <form id="search-form">
+        <div class="row mt-5">
+          <div class="col-md-9">
+            <input
+              type="search"
+              placeholder="Search for a city"
+              class="form-control form-control-lg"
+            />
+          </div>
+          <div class="col-md-3">
+            <input type="submit" value="Search" class="button-search" />
+          </div>
+        </div>
+      </form>
+
+      <div class="container mt-5">
         <div class="row">
           <div class="col-md-6 border text-center">
             <span class="current-temp">28</span>
