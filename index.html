@@ -28,7 +28,7 @@
     <div class="content" style="background-color: rgba(0, 0, 0, 0.5)">
       <div class="row">
         <div class="col-md-10">
-          <h1 id="currecnt-city">Chicago</h1>
+          <h1 id="current-city"></h1>
           <h5>Wednesday, 8 September, 12:35</h5>
         </div>
         <div class="col-md-2">
@@ -38,14 +38,14 @@
 
       <form id="search-form">
         <div class="row mt-5">
-          <div class="col-md-9">
+          <div class="col-md-8">
             <input
               type="search"
               placeholder="Search for a city"
               class="form-control form-control-lg"
             />
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <input type="submit" value="Search" class="button-search" />
           </div>
         </div>
@@ -53,51 +53,58 @@
 
       <div class="container mt-5">
         <div class="row">
-          <div class="col-md-3 border text-end">
-            <span class="current-temp"> 28°C </span>
+          <div class="col-md-3 col-sm-6 text-end pt-4">
+            <h2><span id="current-temp"></span>°C</h2>
 
-            <div class="current-description">Broken Clouds</div>
+            <br />
+            Feels like:
+            <span id="feels-like"></span>%
+            <br />
+            Humidity: <span id="humidity"></span>%
+
+            <div id="current-description"></div>
           </div>
-          <div class="col-md-3 border">
+
+          <div class="col-md-3 col-sm-6">
             <img src="images/clear-sky-day.png" alt="" width="80%" />
           </div>
 
-          <div class="col-md-6 border">
+          <div class="col-md-6">
             <div class="row">
-              <div class="col-md-3 border text-end">
+              <div class="col-md-3 text-end">
                 Thursday
                 <div class="forecast-temp">25°C</div>
                 <p class="forecast-description">Broken Clouds</p>
               </div>
-              <div class="col-md-3 border">
+              <div class="col-md-3">
                 <img src="images/clear-sky-day.png" alt="" />
               </div>
 
-              <div class="col-md-3 border text-end">
+              <div class="col-md-3 text-end">
                 Friday
                 <div class="forecast-temp">21°C</div>
                 <p class="forecast-description">Broken Clouds</p>
               </div>
-              <div class="col-md-3 border">
+              <div class="col-md-3">
                 <img src="images/clear-sky-day.png" alt="" />
               </div>
             </div>
 
             <div class="row">
-              <div class="col-md-3 border text-end">
+              <div class="col-md-3 text-end">
                 Saturay
                 <div class="forecast-temp">27°C</div>
                 <p class="forecast-description">Broken Clouds</p>
               </div>
-              <div class="col-md-3 border">
+              <div class="col-md-3">
                 <img src="images/clear-sky-day.png" alt="" />
               </div>
-              <div class="col-md-3 border text-end">
+              <div class="col-md-3 text-end">
                 Sunday
                 <div class="forecast-temp">25°C</div>
                 <p class="forecast-description">Broken Clouds</p>
               </div>
-              <div class="col-md-3 border">
+              <div class="col-md-3">
                 <img src="images/clear-sky-day.png" alt="" />
               </div>
             </div>
