@@ -5,7 +5,9 @@ body {
   margin: 150px;
   font-family: "Playfair Display SC", serif;
 }
-
+.content {
+  padding: 20px;
+}
 h1 {
   font-size: 60px;
 }
