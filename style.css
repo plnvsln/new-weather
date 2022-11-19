@@ -58,7 +58,6 @@ h2 {
   }
   form {
     max-width: 200px;
-    font-size: 12px;
   }
   .container .row > * {
     width: unset !important;
