@@ -1,9 +1,11 @@
 body {
   background-image: url("images/background.jpeg");
-  background-size: 100%;
+  background-size: cover;
   color: rgb(235, 251, 171);
   margin: 150px;
+  font-family: "Playfair Display SC", serif;
 }
+
 h1 {
   font-size: 60px;
 }
@@ -29,6 +31,10 @@ h2 {
 .button-location:hover {
   background-color: rgb(247, 219, 105);
 }
+
+#search-form {
+  margin: auto;
+}
 .button-search {
   padding: 13px 20px;
   margin-top: -3px;
@@ -49,5 +55,12 @@ h2 {
   body {
     margin: 50px;
     background-image: url("images/phone-background.jpeg");
+    background-size: cover;
+  }
+  form {
+    max-width: 250px;
+  }
+  .container .row > * {
+    width: unset !important;
   }
 }
