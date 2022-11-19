@@ -36,7 +36,6 @@ h2 {
 .button-search {
   padding: 13px 20px;
   margin-top: -3px;
-  font-size: 15px;
   border-radius: 15px;
   background-color: rgb(229, 248, 157);
   color: black;
@@ -52,7 +51,7 @@ h2 {
 
 @media (max-width: 768px) {
   body {
-    margin: 30px;
+    margin: 80px 40px;
     background-image: url("images/phone-background.jpeg");
     background-size: cover;
   }
