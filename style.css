@@ -26,15 +26,13 @@ h2 {
   font-size: 18px;
   border-radius: 15px;
   background-color: rgb(224, 252, 111);
+  color: black;
 }
 
 .button-location:hover {
   background-color: rgb(247, 219, 105);
 }
 
-#search-form {
-  margin: auto;
-}
 .button-search {
   padding: 13px 20px;
   margin-top: -3px;
@@ -58,9 +56,12 @@ h2 {
     background-size: cover;
   }
   form {
-    max-width: 250px;
+    max-width: 200px;
   }
   .container .row > * {
     width: unset !important;
+  }
+  form .row {
+    flex-wrap: unset !important;
   }
 }
