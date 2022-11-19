@@ -60,7 +60,4 @@ h2 {
   form {
     max-width: 250px;
   }
-  .container .row > * {
-    width: unset !important;
-  }
 }
