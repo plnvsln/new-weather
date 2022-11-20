@@ -28,13 +28,17 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-    <script src="app.js"></script>
   </head>
   <body>
-    <div class="content" style="background-color: rgba(0, 0, 0, 0.3)">
+    <div class="content" style="background-color: rgba(0, 0, 0, 0.4)">
       <div class="row">
         <div class="col-md-10">
-          <h1 id="current-city"></h1>
+          <div class="d-flex align-items-baseline">
+            <h1 id="current-city"></h1>
+            <h1 class="place">,</h1>
+            <h1 id="current-country" class="place"></h1>
+          </div>
+
           <h5 id="current-date"></h5>
         </div>
         <div class="col-md-2">
@@ -49,6 +53,7 @@
               type="search"
               placeholder="Search for a city"
               class="form-control form-control-lg fs-6"
+              id="city-input"
             />
           </div>
           <div class="col-md-4">
@@ -72,7 +77,7 @@
           </div>
 
           <div class="col-md-3 col-sm-6">
-            <img src="images/clear-sky-day.png" alt="" width="80%" />
+            <img src="" alt="" width="70%" id="current-icon" />
           </div>
 
           <div class="col-md-6">
@@ -118,5 +123,6 @@
         </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

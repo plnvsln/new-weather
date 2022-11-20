@@ -23,13 +23,19 @@ function formatDate(timestamp) {
 }
 
 function displayTemp(response) {
-  console.log(response);
-
   let tempElement = document.querySelector("#current-temp");
   tempElement.innerHTML = Math.round(response.data.temperature.current);
 
   let cityElement = document.querySelector("#current-city");
   cityElement.innerHTML = response.data.city;
+
+  let currentCountry = document.querySelector("#current-country");
+  currentCountry.innerHTML = response.data.country;
+
+  // if (currentCountry.length > 10) {
+  //   alert(`TEST!`);
+  //   // currentCountry.style = "color: red";
+  // }
 
   let descriptionElement = document.querySelector("#current-description");
   descriptionElement.innerHTML = response.data.condition.description;
@@ -42,10 +48,30 @@ function displayTemp(response) {
 
   let dateElement = document.querySelector("#current-date");
   dateElement.innerHTML = formatDate(response.data.time * 1000);
+
+  let iconElement = document.querySelector("#current-icon");
+  iconElement.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  );
+  iconElement.setAttribute("alt", response.data.condition.description);
+  console.log(response.data);
 }
 
-let apiKey = "f1089ea2a06e9tf3co914bf9c65aa287";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Tokyo&key=${apiKey}&units=metric`;
-console.log(apiUrl);
+function search(city) {
+  let apiKey = "f1089ea2a06e9tf3co914bf9c65aa287";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(displayTemp);
+  axios.get(apiUrl).then(displayTemp);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input").value;
+  search(cityInputElement);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+search("Lviv");
