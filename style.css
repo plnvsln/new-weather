@@ -2,7 +2,7 @@ body {
   background-image: url("images/background.jpeg");
   background-size: cover;
   color: rgb(235, 251, 171);
-  margin: 150px;
+  margin: 140px;
   font-family: "Playfair Display SC", serif;
 }
 .content {
@@ -28,7 +28,7 @@ h2 {
 }
 
 .forecast-temp {
-  font-size: 34px;
+  font-size: 28px;
 }
 
 .button-location {
