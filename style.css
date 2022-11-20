@@ -14,10 +14,14 @@ h1 {
 h2 {
   font-size: 55px;
 }
-
-.place {
+#current-country,
+#coma {
   font-size: 45px;
   opacity: 80%;
+}
+.place {
+  display: flex;
+  align-items: baseline;
 }
 .col-md-3 {
   padding: 15px 0px;
@@ -69,5 +73,22 @@ h2 {
   }
   form .row {
     flex-wrap: unset !important;
+  }
+  .place {
+    display: block;
+  }
+  #current-city {
+    font-size: 45px;
+    margin-bottom: 0px;
+  }
+  #coma {
+    display: none;
+  }
+  #current-country {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  #current-icon {
+    width: 100%;
   }
 }
