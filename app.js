@@ -58,6 +58,32 @@ function displayTemp(response) {
   console.log(response.data);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thursday", "Friday", "Saturday", "Sunday"];
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-md-3 text-end">
+                ${day}
+                <div class="forecast-temp">
+                  <span id="forecast-min">22 </span>°C
+                  <span id="forecast-max" class="ps-2"> 25</span>°C
+                </div>
+                <p id="forecast-description">Broken Clouds</p>
+              </div>
+              <div class="col-md-3">
+                <img src="images/clear-sky-day.png" alt="" id="forecast-icon" />
+              </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function search(city) {
   let apiKey = "f1089ea2a06e9tf3co914bf9c65aa287";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
@@ -75,3 +101,4 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 search("Lviv");
+displayForecast();
