@@ -2,7 +2,7 @@ body {
   background-image: url("images/background.jpeg");
   background-size: cover;
   color: rgb(235, 251, 171);
-  margin: 110px;
+  margin: 140px;
   font-family: "Playfair Display SC", serif;
 }
 .content {
