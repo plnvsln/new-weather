@@ -2,7 +2,7 @@ body {
   background-image: url("images/background.jpeg");
   background-size: cover;
   color: rgb(235, 251, 171);
-  margin: 140px;
+  margin: 110px;
   font-family: "Playfair Display SC", serif;
 }
 .content {
@@ -54,7 +54,7 @@ h2 {
   font-size: 28px;
   text-transform: capitalize;
 }
-.forecast-description {
+#forecast-description {
   color: antiquewhite;
   font-size: 15px;
 }
@@ -68,6 +68,7 @@ h2 {
   form {
     max-width: 200px;
   }
+
   .container .row > * {
     width: unset !important;
   }

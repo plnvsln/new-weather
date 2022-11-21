@@ -101,12 +101,14 @@ function displayForecast(response) {
                     forecastDay.temperature.maximum
                   )} </span>°C
                 </div>
-                <p id="forecast-description">Broken Clouds</p>
+                <p id="forecast-description">${
+                  forecastDay.condition.description
+                }</p>
               </div>
               <div class="col-md-3">
                 <img src="${
                   forecastDay.condition.icon_url
-                }" alt="" id="forecast-icon" />
+                }" alt="" id="forecast-icon" width=80% />
               </div>`;
     }
   });
@@ -131,5 +133,5 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("Lviv");
+search("Tokyo");
 displayForecast();
