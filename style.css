@@ -32,7 +32,10 @@ h2 {
 }
 
 .forecast-temp {
-  font-size: 28px;
+  font-size: 25px;
+}
+#forecast-description {
+  font-size: 17px;
 }
 
 #current-location-button {
