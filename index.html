@@ -42,21 +42,21 @@
           <h5 id="current-date"></h5>
         </div>
         <div class="col-md-2">
-          <button class="button-location">My Location</button>
+          <button id="current-location-button">My Location</button>
         </div>
       </div>
 
       <form id="search-form">
         <div class="row mt-5">
-          <div class="col-md-8">
+          <div class="col-sm-8">
             <input
               type="search"
               placeholder="Search for a city"
-              class="form-control form-control-lg fs-6"
+              class="form-control form-control-lg fs-5"
               id="city-input"
             />
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <input type="submit" value="Search" class="button-search fs-6" />
           </div>
         </div>
@@ -64,19 +64,16 @@
 
       <div class="container mt-5">
         <div class="row">
-          <div class="col-md-3 text-end pt-4 main-section">
+          <div class="col-md-3 col-sm-6 pt-4">
             <h2><span id="current-temp"></span>°C</h2>
-
             <br />
             Feels like:
             <span id="feels-like"></span>%
             <br />
             Humidity: <span id="humidity"></span>%
-
             <div id="current-description"></div>
           </div>
-
-          <div class="col-md-3 icon-section">
+          <div class="col-md-3 col-sm-6 icon-section">
             <img
               src=""
               alt=""
@@ -86,21 +83,7 @@
             />
           </div>
 
-          <div class="col-md-6" id="forecast">
-            <div class="row">
-              <div class="col-md-3 text-end">
-                Thursday
-                <div class="forecast-temp">
-                  <span id="forecast-min">22 </span>°C
-                  <span id="forecast-max" class="ps-2"> 25</span>°C
-                </div>
-                <p id="forecast-description">Broken Clouds</p>
-              </div>
-              <div class="col-md-3">
-                <img src="images/clear-sky-day.png" alt="" id="forecast-icon" />
-              </div>
-            </div>
-          </div>
+          <div class="col-md-6" id="forecast"></div>
         </div>
       </div>
     </div>
@@ -111,7 +94,7 @@
 <!-- <div class="col-md-6">
 
             <div class="row">
-              <div class="col-md-3 text-end">
+              <div class="col-md-3 ">
                 Thursday
                 <div class="forecast-temp">
                   <span id="forecast-min">22 </span>°C
@@ -123,7 +106,7 @@
                 <img src="images/clear-sky-day.png" alt="" />
               </div>
 
-              <div class="col-md-3 text-end">
+              <div class="col-md-3 ">
                 Friday
                 <div class="forecast-temp">
                   <span id="forecast-min">20 </span>°C
@@ -137,7 +120,7 @@
             </div> -->
 
 <!-- <div class="row">
-              <div class="col-md-3 text-end">
+              <div class="col-md-3 ">
                 Saturay
                 <div class="forecast-temp">
                   <span id="forecast-min">22 </span>°C
@@ -148,7 +131,7 @@
               <div class="col-md-3">
                 <img src="images/clear-sky-day.png" alt="" />
               </div>
-              <div class="col-md-3 text-end">
+              <div class="col-md-3 ">
                 Sunday
                 <div class="forecast-temp">
                   <span id="forecast-min">20 </span>°C

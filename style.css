@@ -2,8 +2,12 @@ body {
   background-image: url("images/background.jpeg");
   background-size: cover;
   color: rgb(235, 251, 171);
-  margin: 140px;
+  margin: 60px 140px;
   font-family: "Playfair Display SC", serif;
+}
+form {
+  margin: auto;
+  max-width: 70%;
 }
 .content {
   padding: 20px;
@@ -31,7 +35,7 @@ h2 {
   font-size: 28px;
 }
 
-.button-location {
+#current-location-button {
   padding: 15px 20px;
   font-size: 18px;
   border-radius: 15px;
@@ -39,13 +43,12 @@ h2 {
   color: black;
 }
 
-.button-location:hover {
+#current-location-button:hover {
   background-color: rgb(247, 219, 105);
 }
 
 .button-search {
   padding: 13px 20px;
-  margin-top: -3px;
   border-radius: 15px;
   background-color: rgb(229, 248, 157);
   color: black;
@@ -53,10 +56,6 @@ h2 {
 #current-description {
   font-size: 28px;
   text-transform: capitalize;
-}
-#forecast-description {
-  color: antiquewhite;
-  font-size: 15px;
 }
 
 @media (max-width: 768px) {
@@ -68,12 +67,17 @@ h2 {
   form {
     max-width: 200px;
   }
-
   .container .row > * {
     width: unset !important;
   }
   form .row {
     flex-wrap: unset !important;
+  }
+  form #city-input {
+    font-size: 15px !important;
+  }
+  form .button-search {
+    display: block;
   }
   .place {
     display: block;
