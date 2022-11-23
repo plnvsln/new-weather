@@ -97,7 +97,7 @@ function displayForecast(response) {
                   <span id="forecast-min">${Math.round(
                     forecastDay.temperature.minimum
                   )} </span>°C
-                  <span id="forecast-max" class="ps-2"> ${Math.round(
+                  <span id="forecast-max" class="ps-1"> ${Math.round(
                     forecastDay.temperature.maximum
                   )} </span>°C
                 </div>
@@ -108,7 +108,7 @@ function displayForecast(response) {
               <div class="col-md-3">
                 <img src="${
                   forecastDay.condition.icon_url
-                }" alt="" id="forecast-icon" width=80% />
+                }" alt="" id="forecast-icon" width=75% />
               </div>`;
     }
   });
